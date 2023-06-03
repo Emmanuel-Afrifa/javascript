@@ -24,7 +24,12 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+// A fucntion that converts the credit card string into an array
+function stringToArray(string){
+    return string.split('');
+}
 
+// A function that validates the credit card. It returns true if the card is valid and false otherwise.
 function validateCred(array) {
   const newArray = [];
   newArray.push(array[array.length-1])
@@ -58,6 +63,7 @@ function validateCred(array) {
 
 //console.log(validateCred(valid1));
 
+// A function that returns an array of all the invalid cards
 function findInvalidCards(nestedarray) {
   newInvalidArray = []
   for (array of nestedarray){
@@ -73,6 +79,8 @@ function findInvalidCards(nestedarray) {
 let invalids = findInvalidCards(batch)
 console.log(invalids)
 
+
+// A fuction that identifies the companies that issued the invalid credit cards
 function idInvalidCardCompanies(nestedarray){
  let invalidCardsCompany = []
   for (array of nestedarray){
