@@ -6,3 +6,4 @@ List of the programs in this directory are as follows
 - sleep debt calculator
 - mealmaker
 - teamstats
+- creditCardChecker
